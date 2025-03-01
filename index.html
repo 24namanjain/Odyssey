@@ -10,6 +10,8 @@
       
       
       
+        <link rel="next" href="Docker/notes/1-docker-introduction/">
+      
       
       <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.6">
@@ -357,7 +359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Odyssey/Docker/notes/1-docker-introduction.md" class="md-nav__link">
+      <a href="Docker/notes/1-docker-introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -379,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Odyssey/Docker/notes/2-docker-basic-commands.md" class="md-nav__link">
+      <a href="Docker/notes/2-docker-basic-commands/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -401,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Odyssey/Docker/notes/3-debugging-a-container.md" class="md-nav__link">
+      <a href="Docker/notes/3-debugging-a-container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -467,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Odyssey/Kubernetes/notes/1-kubernetes-introduction.md" class="md-nav__link">
+      <a href="Kubernetes/notes/1-kubernetes-introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -489,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Odyssey/Kubernetes/notes/2-main-kube-components.md" class="md-nav__link">
+      <a href="Kubernetes/notes/2-main-kube-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Odyssey/Kubernetes/notes/3-k8s-architecture.md" class="md-nav__link">
+      <a href="Kubernetes/notes/3-k8s-architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -533,7 +535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Odyssey/Kubernetes/notes/4-local-k8s-setup.md" class="md-nav__link">
+      <a href="Kubernetes/notes/4-local-k8s-setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -555,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Odyssey/Kubernetes/notes/5-basic-kubectl-commands.md" class="md-nav__link">
+      <a href="Kubernetes/notes/5-basic-kubectl-commands/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -577,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Odyssey/Kubernetes/notes/6-control-plane-components.md" class="md-nav__link">
+      <a href="Kubernetes/notes/6-control-plane-components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -686,12 +688,24 @@
 
 
 <h1 id="welcome-to-odyssey-documentation">Welcome to Odyssey Documentation</h1>
-<p>This documentation contains notes and guides covering various technologies including Java, Spring Boot, and Kubernetes.</p>
+<p>This documentation contains notes and guides covering various technologies including Docker and Kubernetes.</p>
 <h2 id="documentation-sections">Documentation Sections</h2>
 <ul>
-<li><strong><a href="java-notes.md">Java</a></strong> - Java programming language notes and best practices</li>
-<li><strong><a href="spring-boot-notes.md">Spring Boot</a></strong> - Spring Boot framework documentation</li>
-<li><strong><a href="kubernetes-notes.md">Kubernetes</a></strong> - Kubernetes deployment and management guides</li>
+<li><strong>Docker</strong></li>
+<li><a href="Docker/notes/1-docker-introduction/">Introduction</a></li>
+<li><a href="Docker/notes/2-docker-basic-commands/">Basic Commands</a></li>
+<li>
+<p><a href="Docker/notes/3-debugging-a-container/">Debugging Containers</a></p>
+</li>
+<li>
+<p><strong>Kubernetes</strong></p>
+</li>
+<li><a href="Kubernetes/notes/1-kubernetes-introduction/">Introduction</a></li>
+<li><a href="Kubernetes/notes/2-main-kube-components/">Main Components</a></li>
+<li><a href="Kubernetes/notes/3-k8s-architecture/">Architecture</a></li>
+<li><a href="Kubernetes/notes/4-local-k8s-setup/">Local Setup</a></li>
+<li><a href="Kubernetes/notes/5-basic-kubectl-commands/">Basic Commands</a></li>
+<li><a href="Kubernetes/notes/6-control-plane-components/">Control Plane Components</a></li>
 </ul>
 <h2 id="getting-started">Getting Started</h2>
 <p>To work with this documentation locally:</p>
@@ -702,10 +716,22 @@
 </ul>
 <h2 id="documentation-structure">Documentation Structure</h2>
 <pre><code>docs/
-    index.md              # This welcome page
-    java-notes.md         # Java documentation
-    spring-boot-notes.md  # Spring Boot documentation 
-    kubernetes-notes.md   # Kubernetes documentation
+├── index.md
+├── Docker/
+│   └── notes/
+│       ├── 1-docker-introduction.md
+│       ├── 2-docker-basic-commands.md
+│       └── 3-debugging-a-container.md
+└── Kubernetes/
+    ├── notes/
+    │   ├── 1-kubernetes-introduction.md
+    │   ├── 2-main-kube-components.md
+    │   ├── 3-k8s-architecture.md
+    │   ├── 4-local-k8s-setup.md
+    │   ├── 5-basic-kubectl-commands.md
+    │   └── 6-control-plane-components.md
+    └── src/
+        └── nginx-deployment.yaml
 </code></pre>
 <h2 id="contributing">Contributing</h2>
 <p>Feel free to contribute to this documentation by submitting pull requests or opening issues if you find any errors or have suggestions for improvements.</p>
