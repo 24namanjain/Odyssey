@@ -1,12 +1,21 @@
 # Welcome to Odyssey Documentation
 
-This documentation contains notes and guides covering various technologies including Java, Spring Boot, and Kubernetes.
+This documentation contains notes and guides covering various technologies including Docker and Kubernetes.
 
 ## Documentation Sections
 
-* **[Java](java-notes.md)** - Java programming language notes and best practices
-* **[Spring Boot](spring-boot-notes.md)** - Spring Boot framework documentation
-* **[Kubernetes](kubernetes-notes.md)** - Kubernetes deployment and management guides
+* **Docker**
+  * [Introduction](Docker/notes/1-docker-introduction.md)
+  * [Basic Commands](Docker/notes/2-docker-basic-commands.md)
+  * [Debugging Containers](Docker/notes/3-debugging-a-container.md)
+
+* **Kubernetes**
+  * [Introduction](Kubernetes/notes/1-kubernetes-introduction.md)
+  * [Main Components](Kubernetes/notes/2-main-kube-components.md)
+  * [Architecture](Kubernetes/notes/3-k8s-architecture.md)
+  * [Local Setup](Kubernetes/notes/4-local-k8s-setup.md)
+  * [Basic Commands](Kubernetes/notes/5-basic-kubectl-commands.md)
+  * [Control Plane Components](Kubernetes/notes/6-control-plane-components.md)
 
 ## Getting Started
 
@@ -19,10 +28,22 @@ To work with this documentation locally:
 ## Documentation Structure
 
     docs/
-        index.md              # This welcome page
-        java-notes.md         # Java documentation
-        spring-boot-notes.md  # Spring Boot documentation 
-        kubernetes-notes.md   # Kubernetes documentation
+    ├── index.md
+    ├── Docker/
+    │   └── notes/
+    │       ├── 1-docker-introduction.md
+    │       ├── 2-docker-basic-commands.md
+    │       └── 3-debugging-a-container.md
+    └── Kubernetes/
+        ├── notes/
+        │   ├── 1-kubernetes-introduction.md
+        │   ├── 2-main-kube-components.md
+        │   ├── 3-k8s-architecture.md
+        │   ├── 4-local-k8s-setup.md
+        │   ├── 5-basic-kubectl-commands.md
+        │   └── 6-control-plane-components.md
+        └── src/
+            └── nginx-deployment.yaml
 
 ## Contributing
 
