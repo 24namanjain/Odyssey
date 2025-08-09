@@ -4,6 +4,10 @@ This documentation contains notes and guides covering various technologies inclu
 
 ## Documentation Sections
 
+* **Personal**
+  * [Important Links](_personal/links.md)
+  * [TODOs](_personal/todo.md)
+
 * **Docker**
   * Guides
     * [Introduction](Docker/guides/1-docker-introduction.md)
@@ -36,6 +40,9 @@ To work with this documentation locally:
 
     docs/
     ├── index.md
+    ├── _personal/
+    │   ├── links.md
+    │   └── todo.md
     ├── Docker/
     │   ├── guides/
     │   │   ├── 1-docker-introduction.md
