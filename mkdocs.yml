@@ -1,8 +1,12 @@
 site_name: "Odyssey"
 theme:
   name: "material"
+plugins:
+  - search
+  - tags
 nav:
   - Home: index.md
+  - Tags: tags.md
   - Personal:
     - Important Links: _personal/links.md
     - TODO: _personal/todo.md
