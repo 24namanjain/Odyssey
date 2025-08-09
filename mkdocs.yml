@@ -3,7 +3,8 @@ theme:
   name: "material"
 plugins:
   - search
-  - tags
+  - tags:
+      tags_file: tags.md
 nav:
   - Home: index.md
   - Tags: tags.md
