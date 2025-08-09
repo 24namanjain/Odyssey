@@ -28,6 +28,12 @@ This documentation contains notes and guides covering various technologies inclu
     * [Basic kubectl Commands](Kubernetes/commands/5-basic-kubectl-commands.md)
     * [Minikube Commands](Kubernetes/commands/7-minikube-cluster-cmds.md)
 
+* **System Design**
+  * Guides
+    * [Overview](SystemDesign/guides/README.md)
+  * References
+    * [Overview](SystemDesign/references/README.md)
+
 ## Getting Started
 
 To work with this documentation locally:
@@ -65,6 +71,12 @@ To work with this documentation locally:
             ├── kind-multi-node-cluster.yaml
             ├── nginx-deployment.yaml
             └── nginx-pod.yaml
+        
+    ├── SystemDesign/
+    │   ├── guides/
+    │   │   └── README.md
+    │   └── references/
+    │       └── README.md
 
 ## Contributing
 

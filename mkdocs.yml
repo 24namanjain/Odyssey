@@ -29,4 +29,9 @@ nav:
         - Kind Multi-node Cluster: Kubernetes/manifests/kind-multi-node-cluster.yaml
         - Nginx Deployment: Kubernetes/manifests/nginx-deployment.yaml
         - Nginx Pod: Kubernetes/manifests/nginx-pod.yaml
+  - System Design:
+    - Guides:
+      - Overview: SystemDesign/guides/README.md
+    - References:
+      - Overview: SystemDesign/references/README.md
 
