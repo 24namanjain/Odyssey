@@ -5,9 +5,11 @@ nav:
   - Home: index.md
   - Cloud & Infrastructure:
     - Docker:
-      - Introduction: Docker/notes/1-docker-introduction.md
-      - Docker Basic Commands: Docker/notes/2-docker-basic-commands.md
-      - Debugging a container: Docker/notes/3-debugging-a-container.md
+      - Guides:
+        - Introduction: Docker/guides/1-docker-introduction.md
+        - Debugging a container: Docker/guides/3-debugging-a-container.md
+      - Commands:
+        - Docker Basic Commands: Docker/commands/2-docker-basic-commands.md
     - Kubernetes:
       - Guides:
         - Introduction: Kubernetes/guides/1-kubernetes-introduction.md
