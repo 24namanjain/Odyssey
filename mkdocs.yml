@@ -9,9 +9,18 @@ nav:
       - Docker Basic Commands: Docker/notes/2-docker-basic-commands.md
       - Debugging a container: Docker/notes/3-debugging-a-container.md
     - Kubernetes:
-      - Introduction: Kubernetes/notes/1-kubernetes-introduction.md
-      - Main Components: Kubernetes/notes/2-main-kube-components.md
-      - Architecture: Kubernetes/notes/3-k8s-architecture.md
-      - Local Setup: Kubernetes/notes/4-local-k8s-setup.md
-      - Basic Commands: Kubernetes/notes/5-basic-kubectl-commands.md
-      - Control Plane Components: Kubernetes/notes/6-control-plane-components.md
+      - Guides:
+        - Introduction: Kubernetes/guides/1-kubernetes-introduction.md
+        - Main Components: Kubernetes/guides/2-main-kube-components.md
+        - Architecture: Kubernetes/guides/3-k8s-architecture.md
+        - Local Setup: Kubernetes/guides/4-local-k8s-setup.md
+        - Control Plane Components: Kubernetes/guides/6-control-plane-components.md
+        - Multi-node Cluster with Kind: Kubernetes/guides/8-mutli-node-cluster-with-kind.md
+        - Running Containers in Kubernetes: Kubernetes/guides/9-running-your-containers-in-kube.md
+      - Commands:
+        - Basic kubectl Commands: Kubernetes/commands/5-basic-kubectl-commands.md
+        - Minikube Commands: Kubernetes/commands/7-minikube-cluster-cmds.md
+      - Manifests:
+        - Kind Multi-node Cluster: Kubernetes/manifests/kind-multi-node-cluster.yaml
+        - Nginx Deployment: Kubernetes/manifests/nginx-deployment.yaml
+        - Nginx Pod: Kubernetes/manifests/nginx-pod.yaml

@@ -101,8 +101,8 @@ spec:
 Run the pod using the YAML configuration:
 
 ```bash
-kubectl apply -f src/9-running-your-container-in-kube/nginx-pod.yaml
+kubectl apply -f ../manifests/nginx-pod.yaml
 ```
 
 ## Related file
-[ngninx-pod.yaml](../src/9-running-your-container-in-kube/nginx-pod.yaml)
+[ngninx-pod.yaml](../manifests/nginx-pod.yaml)

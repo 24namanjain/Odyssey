@@ -162,7 +162,7 @@ No resources found in default namespace.
 1. Apply a configuration file
 
 ```bash
-kubectl apply -f nginx-deployment.yaml
+kubectl apply -f ../manifests/nginx-deployment.yaml
 deployment.apps/nginx-deployment created
 ```
 
@@ -177,13 +177,13 @@ nginx-deployment   1/1     1            1           27s
 3. Edit the configuration file
 
 ```bash
-vi nginx-deployment.yaml
+vi ../manifests/nginx-deployment.yaml
 ```
 
 4. Re-apply the configuration file
 
 ```bash
-kubectl apply -f nginx-deployment.yaml
+kubectl apply -f ../manifests/nginx-deployment.yaml
 deployment.apps/nginx-deployment configured
 ```
 
@@ -194,4 +194,4 @@ kubectl get deployment
 NAME               READY   UP-TO-DATE   AVAILABLE   AGE
 nginx-deployment   2/2     2            2           56s
 ```
-You can find the `nginx-deployment.yaml` file in the same directory [here](./src/nginx-deployment.yaml).
+You can find the `nginx-deployment.yaml` file [here](../manifests/nginx-deployment.yaml).

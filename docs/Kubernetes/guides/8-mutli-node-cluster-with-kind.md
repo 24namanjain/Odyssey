@@ -40,7 +40,7 @@ kubectl cluster-info --context kind-test-kind
 
 3. Create a multi-node cluster using a configuration file:
 ```bash
-kind create cluster --config src/3-kind-multi-node-cluster/kind_cluster
+kind create cluster --config ../manifests/kind-multi-node-cluster.yaml
 ```
 This creates a cluster with:
 - 1 control plane node
@@ -107,7 +107,7 @@ Create a new Kind cluster with a specific config and Kubernetes version:
 ```bash
 kind create cluster \
 --name my-kind-cluster \
---config ./src/3-kind-multi-node-cluster/kind_cluster \
+--config ../manifests/kind-multi-node-cluster.yaml \
 --image kindest/node:v1.29.0
 ```
 
@@ -169,4 +169,4 @@ For more information and guides, check out the [Kind Quick Start Docs](https://k
 
 
 ## Related file
-[Simple kind cluster config](../src/3-kind-multi-node-cluster/kind_cluster)
+[Simple kind cluster config](../manifests/kind-multi-node-cluster.yaml)
