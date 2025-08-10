@@ -5,17 +5,46 @@ tags: [personal, links, resources, bookmarks]
 
 # Important Links
 
-- Category: Kubernetes
-  - Link: https://kubernetes.io/docs/home/
-  - Notes: Official docs
+- **Kubernetes**
+  - [Official Documentation](https://kubernetes.io/docs/home/)
+    - API Reference
+    - Tutorials and Guides
+    - Best Practices
+  - [Kubernetes Blog](https://kubernetes.io/blog/)
+  - [Kubernetes GitHub](https://github.com/kubernetes/kubernetes)
 
-- Category: Docker
-  - Link: https://docs.docker.com/
-  - Notes: Official docs
+- **Docker**
+  - [Official Documentation](https://docs.docker.com/)
+    - Get Started Guide
+    - Reference Documentation
+    - Best Practices
+  - [Docker Hub](https://hub.docker.com/)
+    - Container Images
+    - Official Repositories
 
-- Category: General
-  - Link: https://12factor.net/
-  - Notes: Best practices for building SaaS apps
+- **System Design**
+  - [System Design Primer](https://github.com/donnemartin/system-design-primer)
+    - Scalability patterns
+    - Architecture examples
+  - [High Scalability](http://highscalability.com/)
+    - Real-world case studies
 
-Tip: Keep entries short; move long summaries into a guide when they grow.
+- **General Development**
+  - [12 Factor App](https://12factor.net/)
+    - Best practices for building SaaS applications
+    - Configuration management
+    - Process management
+  - [GitHub](https://github.com/)
+    - Code repositories
+    - Open source projects
+
+- **Learning Resources**
+  - [Awesome Lists](https://github.com/sindresorhus/awesome)
+    - Curated lists of resources
+  - [Dev.to](https://dev.to/)
+    - Developer community articles
+
+---
+
+**Tip**: Keep entries short; move long summaries into a guide when they grow.
 
