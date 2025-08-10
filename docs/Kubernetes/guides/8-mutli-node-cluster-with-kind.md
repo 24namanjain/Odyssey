@@ -1,3 +1,8 @@
+---
+title: Multi-Node Cluster with Kind
+tags: [kubernetes, kind, multi-node, local-development, cluster-setup, docker]
+---
+
 # Multi-Node Kubernetes Cluster with Kind
 
 Kind (Kubernetes IN Docker) allows you to create multi-node Kubernetes clusters for local development and testing. This guide demonstrates how to set up a cluster with multiple worker nodes.

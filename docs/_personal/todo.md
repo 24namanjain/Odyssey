@@ -1,5 +1,6 @@
 ---
 title: Personal TODO
+tags: [personal, todo, tasks, learning-goals]
 ---
 
 # TODO

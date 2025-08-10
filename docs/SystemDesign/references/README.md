@@ -1,3 +1,8 @@
+---
+title: System Design References
+tags: [system-design, references, quick-lookup, architecture]
+---
+
 # System Design References
 
 Keep concise, high-signal references here: diagrams, formulas, checklists, and links to deeper guides.

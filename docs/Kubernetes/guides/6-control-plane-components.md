@@ -1,3 +1,8 @@
+---
+title: Control Plane Components
+tags: [kubernetes, control-plane, api-server, etcd, scheduler, controller-manager, architecture]
+---
+
 # Control Plane Components
 
 ## API Server (kube-apiserver)

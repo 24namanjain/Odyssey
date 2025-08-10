@@ -1,5 +1,6 @@
 ---
 title: Tags
+tags: [tags, index, navigation]
 ---
 
 # Tags

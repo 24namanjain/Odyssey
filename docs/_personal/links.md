@@ -1,5 +1,6 @@
 ---
 title: Important Links
+tags: [personal, links, resources, bookmarks]
 ---
 
 # Important Links

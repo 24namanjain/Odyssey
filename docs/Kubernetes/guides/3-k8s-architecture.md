@@ -1,5 +1,9 @@
+---
+title: Kubernetes Architecture
+tags: [kubernetes, architecture, control-plane, compute-plane, networking]
+---
+
 # Kubernetes Node Architecture
-tags: [kubernetes, networking]
 
 Each node has multiple pods.
 

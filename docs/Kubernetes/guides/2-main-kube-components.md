@@ -1,3 +1,8 @@
+---
+title: Main Kubernetes Components
+tags: [kubernetes, components, pods, services, deployments, architecture]
+---
+
 # Main Kubernetes Components
 
 ## Node

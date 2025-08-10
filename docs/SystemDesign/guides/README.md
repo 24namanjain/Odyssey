@@ -1,3 +1,8 @@
+---
+title: System Design Guides
+tags: [system-design, architecture, scalability, guides]
+---
+
 # System Design Guides
 
 Use this section for step-by-step writeups on topics like scaling, caching, queues, consistency, and more.

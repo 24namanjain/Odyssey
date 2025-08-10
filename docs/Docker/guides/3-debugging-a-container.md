@@ -1,3 +1,8 @@
+---
+title: Debugging Docker Containers
+tags: [docker, debugging, containers, logs, troubleshooting, cli]
+---
+
 # Debugging a Docker Container
 
 ## Listing Running Containers

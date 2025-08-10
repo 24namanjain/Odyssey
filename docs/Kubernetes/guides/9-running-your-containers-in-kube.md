@@ -1,3 +1,8 @@
+---
+title: Running Containers in Kubernetes
+tags: [kubernetes, pods, containers, imperative, declarative, nginx, yaml]
+---
+
 # Creating a Pod with Imperative Syntax
 
 ## Creating an Nginx Pod
