@@ -1,3 +1,8 @@
+---
+title: Kubernetes Introduction
+tags: [kubernetes, introduction, containers, orchestration]
+---
+
 # Kubernetes Introduction
 
 Kubernetes is an open-source platform designed to automate deploying, scaling, and operating application containers. It groups containers that make up an application into logical units for easy management and discovery.

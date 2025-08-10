@@ -1,3 +1,8 @@
+---
+title: Docker Basic Commands
+tags: [docker, commands, cli, containers, images]
+---
+
 # Docker Basic Commands
 
 ## Pulling and Running PostgreSQL

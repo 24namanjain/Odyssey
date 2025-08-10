@@ -1,3 +1,8 @@
+---
+title: Local Kubernetes Setup
+tags: [kubernetes, setup, minikube, local-development, installation]
+---
+
 # Local Kubernetes Setup with Minikube
 
 ## Prerequisites

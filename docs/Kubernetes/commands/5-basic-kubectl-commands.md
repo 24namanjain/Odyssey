@@ -1,3 +1,10 @@
+---
+title: Basic kubectl Commands
+tags: [kubernetes, kubectl, commands, cli, pods, deployments]
+---
+
+# Basic kubectl Commands
+
 ```bash
 kubectl create deployment nginx-depl --image=nginx
 deployment.apps/nginx-depl created
@@ -195,3 +202,5 @@ NAME               READY   UP-TO-DATE   AVAILABLE   AGE
 nginx-deployment   2/2     2            2           56s
 ```
 You can find the `nginx-deployment.yaml` file [here](../manifests/nginx-deployment.yaml).
+
+```

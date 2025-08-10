@@ -1,3 +1,8 @@
+---
+title: Docker Introduction
+tags: [docker, containers, introduction, virtualization]
+---
+
 # Docker Introduction
 
 Docker is a platform that enables developers to create, deploy, and run applications in containers. Containers are lightweight, portable, and self-sufficient units that include everything needed to run a piece of software, including the code, runtime, system tools, libraries, and settings.
