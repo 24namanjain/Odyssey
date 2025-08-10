@@ -38,9 +38,9 @@ nav:
         - Basic kubectl Commands: Kubernetes/commands/5-basic-kubectl-commands.md
         - Minikube Commands: Kubernetes/commands/7-minikube-cluster-cmds.md
       - Manifests:
-        - Kind Multi-node Cluster: Kubernetes/manifests/kind-multi-node-cluster.yaml
-        - Nginx Deployment: Kubernetes/manifests/nginx-deployment.yaml
-        - Nginx Pod: Kubernetes/manifests/nginx-pod.yaml
+        - Kind Multi-node Cluster: Kubernetes/manifests/kind-multi-node-cluster.md
+        - Nginx Deployment: Kubernetes/manifests/nginx-deployment.md
+        - Nginx Pod: Kubernetes/manifests/nginx-pod.md
   - System Design:
     - Guides:
       - Overview: SystemDesign/guides/README.md
