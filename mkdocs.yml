@@ -8,8 +8,6 @@ theme:
     - search.highlight
     - search.share
     - content.tabs.link
-  icon:
-    tag: material/tag
 plugins:
   - search
   - tags:
