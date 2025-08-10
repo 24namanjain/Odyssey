@@ -55,7 +55,7 @@ nginx-pod   1/1     Running   0          30s
 
 ## Download
 
-[:octicons-download-16: Download YAML file](nginx-pod.yaml){ .md-button .md-button--primary }
+[📥 Download YAML file](nginx-pod.yaml)
 
 ---
 

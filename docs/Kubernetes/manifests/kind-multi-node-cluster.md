@@ -41,7 +41,7 @@ kind-worker3         Ready    <none>          1m    v1.32.2
 
 ## Download
 
-[:octicons-download-16: Download YAML file](kind-multi-node-cluster.yaml){ .md-button .md-button--primary }
+[📥 Download YAML file](kind-multi-node-cluster.yaml)
 
 ---
 
