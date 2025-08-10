@@ -1,6 +1,15 @@
 site_name: "Odyssey"
 theme:
   name: "material"
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.share
+    - content.tabs.link
+  icon:
+    tag: material/tag
 plugins:
   - search
   - tags:
