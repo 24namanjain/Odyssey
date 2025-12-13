@@ -1,4 +1,5 @@
 site_name: "Odyssey"
+site_dir: _site
 theme:
   name: "material"
   features:
