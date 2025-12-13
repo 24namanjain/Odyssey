@@ -1,3 +1,8 @@
+---
+title: Home
+tags: [home, index, navigation]
+---
+
 # Welcome to Odyssey Documentation
 
 This documentation contains notes and guides covering various technologies including Docker and Kubernetes.
@@ -8,31 +13,14 @@ This documentation contains notes and guides covering various technologies inclu
   * [Important Links](_personal/links.md)
   * [TODOs](_personal/todo.md)
 
-* **Docker**
-  * Guides
-    * [Introduction](Docker/guides/1-docker-introduction.md)
-    * [Debugging Containers](Docker/guides/3-debugging-a-container.md)
-  * Commands
-    * [Basic Commands](Docker/commands/2-docker-basic-commands.md)
+* **[Docker](Docker/index.md)**
+  * Containerization platform documentation
 
-* **Kubernetes**
-  * Guides
-    * [Introduction](Kubernetes/guides/1-kubernetes-introduction.md)
-    * [Main Components](Kubernetes/guides/2-main-kube-components.md)
-    * [Architecture](Kubernetes/guides/3-k8s-architecture.md)
-    * [Local Setup](Kubernetes/guides/4-local-k8s-setup.md)
-    * [Control Plane Components](Kubernetes/guides/6-control-plane-components.md)
-    * [Multi-node Cluster with Kind](Kubernetes/guides/8-mutli-node-cluster-with-kind.md)
-    * [Running Containers in Kubernetes](Kubernetes/guides/9-running-your-containers-in-kube.md)
-  * Commands
-    * [Basic kubectl Commands](Kubernetes/commands/5-basic-kubectl-commands.md)
-    * [Minikube Commands](Kubernetes/commands/7-minikube-cluster-cmds.md)
+* **[Kubernetes](Kubernetes/index.md)**
+  * Container orchestration platform documentation
 
-* **System Design**
-  * Guides
-    * [Overview](SystemDesign/guides/README.md)
-  * References
-    * [Overview](SystemDesign/references/README.md)
+* **[System Design](SystemDesign/index.md)**
+  * System design principles and patterns
 
 ## Getting Started
 
@@ -50,33 +38,21 @@ To work with this documentation locally:
     │   ├── links.md
     │   └── todo.md
     ├── Docker/
+    │   ├── index.md
+    │   ├── _drafts/
     │   ├── guides/
-    │   │   ├── 1-docker-introduction.md
-    │   │   └── 3-debugging-a-container.md
     │   └── commands/
-    │       └── 2-docker-basic-commands.md
-    └── Kubernetes/
-        ├── guides/
-        │   ├── 1-kubernetes-introduction.md
-        │   ├── 2-main-kube-components.md
-        │   ├── 3-k8s-architecture.md
-        │   ├── 4-local-k8s-setup.md
-        │   ├── 6-control-plane-components.md
-        │   ├── 8-mutli-node-cluster-with-kind.md
-        │   └── 9-running-your-containers-in-kube.md
-        ├── commands/
-        │   ├── 5-basic-kubectl-commands.md
-        │   └── 7-minikube-cluster-cmds.md
-        └── manifests/
-            ├── kind-multi-node-cluster.yaml
-            ├── nginx-deployment.yaml
-            └── nginx-pod.yaml
-        
-    ├── SystemDesign/
+    ├── Kubernetes/
+    │   ├── index.md
+    │   ├── _drafts/
     │   ├── guides/
-    │   │   └── README.md
-    │   └── references/
-    │       └── README.md
+    │   ├── commands/
+    │   └── manifests/
+    └── SystemDesign/
+        ├── index.md
+        ├── _drafts/
+        ├── guides/
+        └── references/
 
 ## Contributing
 

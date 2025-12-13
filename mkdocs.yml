@@ -4,10 +4,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
     - search.highlight
-    - search.share
-    - content.tabs.link
 plugins:
   - search
   - tags:
@@ -18,32 +15,6 @@ nav:
   - Personal:
     - Important Links: _personal/links.md
     - TODO: _personal/todo.md
-  - Cloud & Infrastructure:
-    - Docker:
-      - Guides:
-        - Introduction: Docker/guides/1-docker-introduction.md
-        - Debugging a container: Docker/guides/3-debugging-a-container.md
-      - Commands:
-        - Docker Basic Commands: Docker/commands/2-docker-basic-commands.md
-    - Kubernetes:
-      - Guides:
-        - Introduction: Kubernetes/guides/1-kubernetes-introduction.md
-        - Main Components: Kubernetes/guides/2-main-kube-components.md
-        - Architecture: Kubernetes/guides/3-k8s-architecture.md
-        - Local Setup: Kubernetes/guides/4-local-k8s-setup.md
-        - Control Plane Components: Kubernetes/guides/6-control-plane-components.md
-        - Multi-node Cluster with Kind: Kubernetes/guides/8-mutli-node-cluster-with-kind.md
-        - Running Containers in Kubernetes: Kubernetes/guides/9-running-your-containers-in-kube.md
-      - Commands:
-        - Basic kubectl Commands: Kubernetes/commands/5-basic-kubectl-commands.md
-        - Minikube Commands: Kubernetes/commands/7-minikube-cluster-cmds.md
-      - Manifests:
-        - Kind Multi-node Cluster: Kubernetes/manifests/kind-multi-node-cluster.md
-        - Nginx Deployment: Kubernetes/manifests/nginx-deployment.md
-        - Nginx Pod: Kubernetes/manifests/nginx-pod.md
-  - System Design:
-    - Guides:
-      - Overview: SystemDesign/guides/README.md
-    - References:
-      - Overview: SystemDesign/references/README.md
-
+  - Docker: Docker/index.md
+  - Kubernetes: Kubernetes/index.md
+  - System Design: SystemDesign/index.md
