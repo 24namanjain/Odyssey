@@ -1,6 +1,12 @@
 ---
+notion_page_id: 2dfff901-fc97-811a-90ba-c95a2a5b5681
+tags:
+- kubernetes
+- kind
+- cluster-config
+- yaml
+- manifests
 title: Kind Multi-node Cluster Configuration
-tags: [kubernetes, kind, cluster-config, yaml, manifests]
 ---
 
 # Kind Multi-node Cluster Configuration
@@ -17,6 +23,7 @@ nodes:
 - role: worker
 - role: worker
 - role: worker
+
 ```
 
 ## Usage
@@ -27,21 +34,23 @@ kind create cluster --name my-cluster --config kind-multi-node-cluster.yaml
 
 # Verify the cluster
 kubectl get nodes
+
 ```
 
 ## Expected Output
 
-```
+```plain text
 NAME                 STATUS   ROLES           AGE   VERSION
 kind-control-plane   Ready    control-plane   2m    v1.32.2
 kind-worker          Ready    <none>          1m    v1.32.2
 kind-worker2         Ready    <none>          1m    v1.32.2
 kind-worker3         Ready    <none>          1m    v1.32.2
+
 ```
 
 ## Download
 
-[📥 Download YAML file](kind-multi-node-cluster.yaml)
+📥 Download YAML file
 
 ---
 

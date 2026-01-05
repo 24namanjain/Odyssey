@@ -1,6 +1,14 @@
 ---
+notion_page_id: 2dfff901-fc97-811f-89c1-fab7155e8d85
+tags:
+- kubernetes
+- pods
+- containers
+- imperative
+- declarative
+- nginx
+- yaml
 title: Running Containers in Kubernetes
-tags: [kubernetes, pods, containers, imperative, declarative, nginx, yaml]
 ---
 
 # Creating a Pod with Imperative Syntax
@@ -11,12 +19,14 @@ Run an Nginx pod using the `nginx:latest` image:
 
 ```bash
 kubectl run nginx-pod --image nginx:latest
+
 ```
 
 Output:
 
-```
+```plain text
 pod/nginx-pod created
+
 ```
 
 ## Checking Pod Status
@@ -25,20 +35,23 @@ Check the pod status:
 
 ```bash
 kubectl get pods
+
 ```
 
 Example output (while the container is creating):
 
-```
+```plain text
 NAME        READY   STATUS              RESTARTS   AGE
 nginx-pod   0/1     ContainerCreating   0          6s
+
 ```
 
 After a few seconds, the pod should be running:
 
-```
+```plain text
 NAME        READY   STATUS    RESTARTS   AGE
 nginx-pod   1/1     Running   0          14s
+
 ```
 
 ## Watching Pod Status
@@ -47,13 +60,15 @@ You can watch the pod status in real-time:
 
 ```bash
 kubectl get po -w
+
 ```
 
 Output:
 
-```
+```plain text
 NAME        READY   STATUS    RESTARTS   AGE
 nginx-pod   1/1     Running   0          33s
+
 ```
 
 Stop watching with `Ctrl+C`.
@@ -64,12 +79,14 @@ To delete the pod:
 
 ```bash
 kubectl delete pod nginx-pod
+
 ```
 
 Output:
 
-```
+```plain text
 pod "nginx-pod" deleted
+
 ```
 
 ## Verifying Deletion
@@ -78,12 +95,14 @@ Check if the pod has been successfully deleted:
 
 ```bash
 kubectl get pods
+
 ```
 
 Output:
 
-```
+```plain text
 No resources found in default namespace.
+
 ```
 
 # Creating a Pod with Declarative Syntax
@@ -99,6 +118,7 @@ spec:
   containers:
     - name: nginx-container
       image: nginx:latest
+
 ```
 
 ## Applying the Configuration
@@ -107,7 +127,9 @@ Run the pod using the YAML configuration:
 
 ```bash
 kubectl apply -f ../manifests/nginx-pod.yaml
+
 ```
 
 ## Related file
-[ngninx-pod.yaml](../manifests/nginx-pod.yaml)
+
+ngninx-pod.yaml

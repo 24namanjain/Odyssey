@@ -1,6 +1,12 @@
 ---
+notion_page_id: 2dfff901-fc97-8153-b4ce-d73e4d1bb3de
+tags:
+- kubernetes
+- deployment
+- nginx
+- yaml
+- manifests
 title: Nginx Deployment Configuration
-tags: [kubernetes, deployment, nginx, yaml, manifests]
 ---
 
 # Nginx Deployment Configuration
@@ -31,6 +37,7 @@ spec:
               image: nginx:1.16
               ports:
               - containerPort: 80
+
 ```
 
 ## Usage
@@ -47,6 +54,7 @@ kubectl get pods
 
 # Scale the deployment
 kubectl scale deployment nginx-deployment --replicas=3
+
 ```
 
 ## Expected Output
@@ -60,11 +68,12 @@ nginx-deployment   2/2     2            2           30s
 NAME                                READY   STATUS    RESTARTS   AGE
 nginx-deployment-66b6c48dd5-abc12   1/1     Running   0          30s
 nginx-deployment-66b6c48dd5-def34   1/1     Running   0          30s
+
 ```
 
 ## Download
 
-[📥 Download YAML file](nginx-deployment.yaml)
+📥 Download YAML file
 
 ---
 

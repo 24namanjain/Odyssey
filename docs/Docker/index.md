@@ -1,6 +1,10 @@
 ---
+notion_page_id: 2dfff901-fc97-8108-8655-ea5e9ae65e83
+tags:
+- docker
+- containers
+- virtualization
 title: Docker
-tags: [docker, containers, virtualization]
 ---
 
 # Docker
@@ -9,13 +13,14 @@ Documentation and guides for Docker containerization platform.
 
 ## Guides
 
-- [Docker Introduction](guides/docker-introduction.md)
-- [Debugging a Container](guides/debugging-a-container.md)
+- Docker Introduction
+
+- Debugging a Container
 
 ## Commands
 
-- [Docker Basic Commands](commands/docker-basic-commands.md)
+- Docker Basic Commands
 
 ## Drafts
 
-Work in progress content is available in [`_drafts/`](_drafts/).
+Work in progress content is available in `_drafts/`.

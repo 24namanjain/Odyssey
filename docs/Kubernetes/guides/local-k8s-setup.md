@@ -1,6 +1,12 @@
 ---
+notion_page_id: 2dfff901-fc97-8184-9410-c2455e8d7445
+tags:
+- kubernetes
+- setup
+- minikube
+- local-development
+- installation
 title: Local Kubernetes Setup
-tags: [kubernetes, setup, minikube, local-development, installation]
 ---
 
 # Local Kubernetes Setup with Minikube
@@ -12,6 +18,7 @@ Install Hyperkit and Minikube using Homebrew:
 ```bash
 brew install hyperkit
 brew install minikube
+
 ```
 
 ## Starting Minikube
@@ -20,6 +27,7 @@ Start Minikube with the following command:
 
 ```bash
 minikube start
+
 ```
 
 Example output:
@@ -43,12 +51,14 @@ Example output:
     ▪ Using image gcr.io/k8s-minikube/storage-provisioner:v5
 🌟  Enabled addons: default-storageclass, storage-provisioner
 🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+
 ```
 
 Check the status of Minikube:
 
 ```bash
 minikube status
+
 ```
 
 Example output:
@@ -60,6 +70,7 @@ host: Running
 kubelet: Running
 apiserver: Running
 kubeconfig: Configured
+
 ```
 
 ## Using kubectl
@@ -68,6 +79,7 @@ Check the Kubernetes version:
 
 ```bash
 kubectl version
+
 ```
 
 Example output:
@@ -76,6 +88,7 @@ Example output:
 Client Version: v1.31.1
 Kustomize Version: v5.4.2
 Server Version: v1.31.0
+
 ```
 
 Check for existing pods and services:
@@ -83,6 +96,7 @@ Check for existing pods and services:
 ```bash
 kubectl get pod
 kubectl get services
+
 ```
 
 Example output:
@@ -92,6 +106,7 @@ No resources found in default namespace.
 
 NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
 kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   5m12s
+
 ```
 
 ## Creating a Deployment
@@ -100,18 +115,21 @@ Create a deployment using the `nginx` image:
 
 ```bash
 kubectl create deployment nginx-delp --image=nginx
+
 ```
 
 Example output:
 
 ```bash
 deployment.apps/nginx-delp created
+
 ```
 
 Check the deployment status:
 
 ```bash
 kubectl get deployment
+
 ```
 
 Example output:
@@ -119,12 +137,14 @@ Example output:
 ```bash
 NAME         READY   UP-TO-DATE   AVAILABLE   AGE
 nginx-depl   1/1     1            1           6s
+
 ```
 
 Check the replicaset:
 
 ```bash
 kubectl get replicaset
+
 ```
 
 Example output:
@@ -132,12 +152,14 @@ Example output:
 ```bash
 NAME                    DESIRED   CURRENT   READY   AGE
 nginx-depl-5796b5c499   1         1         1       9d
+
 ```
 
 Check the pod status:
 
 ```bash
 kubectl get pod
+
 ```
 
 Example output:
@@ -145,6 +167,7 @@ Example output:
 ```bash
 NAME                          READY   STATUS         RESTARTS   AGE
 nginx-delp-69499d958c-bj76r   0/1     ErrImagePull   0          15s
+
 ```
 
 ## Deleting a Deployment
@@ -153,30 +176,35 @@ Delete the deployment:
 
 ```bash
 kubectl delete deployment nginx-delp
+
 ```
 
 Example output:
 
 ```bash
 deployment.apps "nginx-delp" deleted
+
 ```
 
 Recreate the deployment with the correct image:
 
 ```bash
 kubectl create deployment nginx-delp --image=nginx
+
 ```
 
 Example output:
 
 ```bash
 deployment.apps/nginx-delp created
+
 ```
 
 Check the replicaset again:
 
 ```bash
 kubectl get replicaset
+
 ```
 
 Example output:
@@ -184,4 +212,5 @@ Example output:
 ```bash
 NAME                    DESIRED   CURRENT   READY   AGE
 nginx-depl-5796b5c499   1         1         1       9d
+
 ```

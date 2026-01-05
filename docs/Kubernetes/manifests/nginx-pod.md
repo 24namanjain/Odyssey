@@ -1,6 +1,12 @@
 ---
+notion_page_id: 2dfff901-fc97-81d6-8d37-ec01f78293ea
+tags:
+- kubernetes
+- pod
+- nginx
+- yaml
+- manifests
 title: Nginx Pod Configuration
-tags: [kubernetes, pod, nginx, yaml, manifests]
 ---
 
 # Nginx Pod Configuration
@@ -18,6 +24,7 @@ spec:
   containers:
     - name: nginx-container
       image: nginx:latest
+
 ```
 
 ## Usage
@@ -37,6 +44,7 @@ kubectl exec -it nginx-pod -- /bin/bash
 
 # Delete the pod
 kubectl delete pod nginx-pod
+
 ```
 
 ## Expected Output
@@ -51,11 +59,12 @@ nginx-pod   1/1     Running   0          30s
 /docker-entrypoint.sh: Looking for /docker-entrypoint.d/
 /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
 ...
+
 ```
 
 ## Download
 
-[📥 Download YAML file](nginx-pod.yaml)
+📥 Download YAML file
 
 ---
 
