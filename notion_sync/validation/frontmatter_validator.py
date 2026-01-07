@@ -1,5 +1,5 @@
 import uuid
-from typing import Dict, List, Optional
+from typing import Dict, List
 
 class FrontmatterValidator:
     def validate(self, data: Dict) -> List[str]:

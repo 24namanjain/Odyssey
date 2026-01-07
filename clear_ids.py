@@ -1,4 +1,3 @@
-import os
 import frontmatter
 from pathlib import Path
 
