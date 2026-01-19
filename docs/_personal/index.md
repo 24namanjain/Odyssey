@@ -1,4 +1,4 @@
 ---
-notion_page_id: 2deff901-fc97-81da-8d59-eed3f3d433e3
+notion_page_id: 2edff901-fc97-81fe-b253-f80653b44b34
 title: _personal
 ---

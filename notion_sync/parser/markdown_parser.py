@@ -345,6 +345,9 @@ class MarkdownParser:
 
             elif token.type == 'fence':
                 lang = token.info.strip().split()[0] if token.info.strip() else "plain text"
+                # Map "plain" to "plain text" for Notion API compatibility
+                if lang.lower() == "plain":
+                    lang = "plain text"
                 block = {
                     "object": "block",
                     "type": "code",

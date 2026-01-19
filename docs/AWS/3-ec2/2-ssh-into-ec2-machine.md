@@ -1,3 +1,7 @@
+---
+notion_page_id: 2edff901-fc97-81e8-a761-ddc89c0df95b
+---
+
 # EC2 – Phase 2: SSH into EC2 Instance
 
 ## Details (Teaching / Conceptual Understanding)

@@ -115,10 +115,18 @@ class SyncManager:
                     self.page_ops.update_page(page_id, blocks, topic=None)
                     return page_id
                 except Exception as e:
+                    error_msg = str(e).lower()
                     # If page not found, recreate it
                     if "Could not find" in str(e) or "404" in str(e) or "validation" in str(e): 
                         logger.warning(f"Page {page_id} not found or inaccessible. Re-creating. (Error: {e})")
                         page_id = None
+                    # If archived ancestor error, it should have been handled by page_ops, but log for visibility
+                    elif "archived" in error_msg and ("ancestor" in error_msg or "parent" in error_msg):
+                        logger.error(
+                            f"Failed to update page {page_id} due to archived ancestor. "
+                            f"Attempted to restore but failed. (Error: {e})"
+                        )
+                        return None
                     else:
                         logger.error(f"Failed to update page {page_id}: {e}")
                         return None
