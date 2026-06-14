@@ -22,6 +22,9 @@ This documentation contains notes and guides covering various technologies inclu
 * **[System Design](SystemDesign/index.md)**
   * System design principles and patterns
 
+* **[Software Engineering](SoftwareEngineering/index.md)**
+  * System design, architecture, observability, and metrics
+
 ## Getting Started
 
 To work with this documentation locally:
@@ -53,6 +56,11 @@ To work with this documentation locally:
         ├── _drafts/
         ├── guides/
         └── references/
+    └── SoftwareEngineering/
+        ├── index.md
+        └── SystemDesignAndArchitecture/
+            └── ObservabilityAndMetrics/
+                └── p50-p95-p99-latency.md
 
 ## Contributing
 
