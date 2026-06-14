@@ -1,7 +1,8 @@
 # AWS CloudWatch Logs
 
-## Navigation Path
-**AWS Console → CloudWatch → Logs** (or search "CloudWatch Logs")
+## Console paths
+
+> **CloudWatch Logs:** `AWS Console` › `CloudWatch` › `Logs` (or search "CloudWatch Logs")
 
 ---
 

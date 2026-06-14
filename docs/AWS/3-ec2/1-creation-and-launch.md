@@ -105,7 +105,7 @@ Root volume attached to EC2.
 - Persists across stop/start
 - Deleted on terminate (by default)
 
-We did not modify storage yet.
+We did not modify storage yet — see [EC2 Instance Storage](../4-ec2-instance-storage/index.md) for EBS, snapshots, AMIs, and EFS.
 
 ### IAM Role (Intentionally Skipped)
 
@@ -122,22 +122,19 @@ An EC2 instance can be:
 
 > 📌 Stopping ≠ terminating.
 
-## AWS Console Navigation Paths
+## Console paths
 
-### Launch instance
-`AWS Console` → `EC2` → `Instances` → `Launch instance`
+> **Launch instance:** `AWS Console` › `EC2` › `Instances` › `Launch instance`
 
-### View instance details
-`EC2` → `Instances` → `Select instance`
+> **View instance details:** `AWS Console` › `EC2` › `Instances` › select instance
 
-### Security group settings
-`EC2` → `Instances` → `Security tab` → `Security groups`
+> **Security group settings:** `AWS Console` › `EC2` › `Instances` › `Security` tab › `Security groups`
 
-### Key pairs
-`EC2` → `Key pairs`
+> **Key pairs:** `AWS Console` › `EC2` › `Network & Security` › `Key pairs`
 
-### Instance state
-`EC2` → `Instances` → `Instance state`
+> **Instance state:** `AWS Console` › `EC2` › `Instances` › `Instance state`
+
+> **Instance storage (EBS, EFS):** see [EC2 Instance Storage](../4-ec2-instance-storage/index.md)
 
 ## FAQs & Interview / Certification Q&A
 

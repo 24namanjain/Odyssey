@@ -1,7 +1,8 @@
 # AWS IAM Policies - Practice Examples
 
-## Navigation Path
-**AWS Console → IAM → Policies → Create Policy**
+## Console paths
+
+> **Create policy:** `AWS Console` › `IAM` › `Policies` › `Create policy`
 
 ---
 

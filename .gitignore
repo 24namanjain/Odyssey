@@ -8,3 +8,4 @@ site
 .mcp_*.json
 .k8s_payload.json
 .notion_payload_*.json
+docs/AWS/ec2-keys

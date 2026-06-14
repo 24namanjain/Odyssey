@@ -1,7 +1,8 @@
 # AWS IAM Conditions
 
-## Navigation Path
-**AWS Console → IAM → Policies → Create Policy → JSON → Add Condition**
+## Console paths
+
+> **Create policy with conditions:** `AWS Console` › `IAM` › `Policies` › `Create policy` › `JSON` › `Add condition`
 
 ---
 

@@ -1,14 +1,18 @@
 # AWS IAM (Identity and Access Management)
 
-## Navigation Path
-**AWS Console → IAM** (or search "IAM" in services)
+## Console paths
 
-Key sections:
-- **Users**: `IAM → Users`
-- **Groups**: `IAM → User groups`
-- **Roles**: `IAM → Roles`
-- **Policies**: `IAM → Policies`
-- **Access Analyzer**: `IAM → Access Analyzer`
+> **IAM home:** `AWS Console` › `IAM` (or search "IAM" in services)
+
+> **Users:** `AWS Console` › `IAM` › `Users`
+
+> **User groups:** `AWS Console` › `IAM` › `User groups`
+
+> **Roles:** `AWS Console` › `IAM` › `Roles`
+
+> **Policies:** `AWS Console` › `IAM` › `Policies`
+
+> **Access Analyzer:** `AWS Console` › `IAM` › `Access Analyzer`
 
 ---
 
