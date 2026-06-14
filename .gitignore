@@ -4,3 +4,7 @@ package.json
 .DS_Store
 odyssey-venv
 site
+.env
+.mcp_*.json
+.k8s_payload.json
+.notion_payload_*.json
