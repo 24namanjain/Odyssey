@@ -1,0 +1,6 @@
+[submodule "languages/go"]
+	path = languages/go
+	url = https://github.com/24namanjain/go.git
+[submodule "languages/java"]
+	path = languages/java
+	url = https://github.com/24namanjain/java.git
