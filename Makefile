@@ -18,7 +18,7 @@ SHELL := /bin/bash
 # Submodule paths — keep in sync with .gitmodules
 SUBMODULES := languages/go languages/java cloud/aws cloud/goK8sBible DataLabs
 
-.PHONY: help init sync pull status sub-status sub-pull push push-sub push-all go-run java-build
+.PHONY: help init sync pull status sub-status sub-pull push push-sub go-run java-build
 
 # ---------------------------------------------------------------------------
 # Help
@@ -33,7 +33,7 @@ help: ## Show available commands
 	@echo "  make status                            Show Odyssey + submodule status"
 	@echo "  make sub-pull                          Pull latest main in all submodules"
 	@echo "  make push-sub MODULE=<path> MSG=\"...\"  Commit submodule, push, update Odyssey"
-	@echo "  make push                              Push Odyssey only"
+	@echo "  make push                              Push submodules (if ahead), then Odyssey"
 	@echo ""
 	@echo "Quick dev:"
 	@echo "  make go-run                            Run languages/go"
@@ -79,8 +79,19 @@ sub-status: status ## Alias for status
 # Push helpers
 # ---------------------------------------------------------------------------
 
-push: ## Push Odyssey to origin (run after submodule pointers are committed)
-	git push
+push: ## Push submodules that are ahead, update pointers, then push Odyssey
+	@for module in $(SUBMODULES); do \
+		if [ -n "$$(git -C $$module rev-list --count @{u}..HEAD 2>/dev/null)" ] && \
+		   [ "$$(git -C $$module rev-list --count @{u}..HEAD 2>/dev/null)" -gt 0 ]; then \
+			echo ">>> Pushing $$module"; \
+			git -C $$module push; \
+		fi; \
+	done
+	@git add $(SUBMODULES)
+	@if ! git diff --cached --quiet; then \
+		git commit -m "Update submodule pointers"; \
+	fi
+	@git push
 
 # Commit inside a submodule, push it, then update and push Odyssey's pointer.
 # Example: make push-sub MODULE=languages/go MSG="Add variables lesson"
@@ -108,21 +119,6 @@ endif
 		echo "    Odyssey pointer already up to date"; \
 	else \
 		git commit -m "Update $(MODULE) submodule"; \
-	fi
-	@git push
-
-# Push Odyssey and every submodule that is ahead of its remote
-push-all: ## Push all submodules (if ahead), then push Odyssey
-	@for module in $(SUBMODULES); do \
-		if [ -n "$$(git -C $$module) rev-list --count @{u}..HEAD 2>/dev/null)" ] && \
-		   [ "$$(git -C $$module rev-list --count @{u}..HEAD 2>/dev/null)" -gt 0 ]; then \
-			echo ">>> Pushing $$module"; \
-			git -C $$module push; \
-		fi; \
-	done
-	@git add $(SUBMODULES)
-	@if ! git diff --cached --quiet; then \
-		git commit -m "Update submodule pointers"; \
 	fi
 	@git push
 
