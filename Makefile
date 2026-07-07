@@ -18,7 +18,7 @@ SHELL := /bin/bash
 # Submodule paths — keep in sync with .gitmodules
 SUBMODULES := languages/go languages/java cloud/aws cloud/goK8sBible DataLabs
 
-.PHONY: help init sync pull status sub-status sub-pull push push-sub go-run java-build
+.PHONY: help init sync pull status sub-status push push-sub go-run java-build
 
 # ---------------------------------------------------------------------------
 # Help
@@ -29,9 +29,9 @@ help: ## Show available commands
 	@echo ""
 	@echo "Submodule workflow:"
 	@echo "  make init                              Clone/checkout all submodules"
-	@echo "  make sync                              Pull Odyssey + sync submodules"
+	@echo "  make sync                              Push local commits, then pull Odyssey + sync submodules"
+	@echo "  make pull                              Fast-forward pull in submodules (skips dirty/diverged)"
 	@echo "  make status                            Show Odyssey + submodule status"
-	@echo "  make sub-pull                          Pull latest main in all submodules"
 	@echo "  make push-sub MODULE=<path> MSG=\"...\"  Commit submodule, push, update Odyssey"
 	@echo "  make push                              Push submodules (if ahead), then Odyssey"
 	@echo ""
@@ -48,16 +48,22 @@ help: ## Show available commands
 init: ## First-time setup: init and checkout all submodules
 	git submodule update --init --recursive
 
-sync: ## Pull Odyssey and sync every submodule to its pinned commit
+sync: push ## Push local commits, then pull Odyssey and sync every submodule to its pinned commit
 	git pull --recurse-submodules
 	git submodule update --init --recursive
 
-pull: sync ## Alias for sync
-
-sub-pull: ## Pull latest main inside every submodule (does not update Odyssey pointers)
+pull: ## Fast-forward pull each submodule on its current branch (skips dirty or diverged repos)
 	@for module in $(SUBMODULES); do \
 		echo ">>> Pulling $$module"; \
-		git -C $$module checkout main && git -C $$module pull; \
+		if [ -n "$$(git -C $$module status --porcelain)" ]; then \
+			echo "    Skipped: uncommitted changes"; \
+		elif ! git -C $$module rev-parse --abbrev-ref @{u} >/dev/null 2>&1; then \
+			echo "    Skipped: no upstream configured"; \
+		else \
+			branch=$$(git -C $$module rev-parse --abbrev-ref HEAD); \
+			echo "    Branch: $$branch"; \
+			git -C $$module pull --ff-only || echo "    Skipped: not a fast-forward (local commits or diverged)"; \
+		fi; \
 	done
 
 # ---------------------------------------------------------------------------
